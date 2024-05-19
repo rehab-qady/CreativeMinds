@@ -1,0 +1,584 @@
+/* Global Variables */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --main-color:#1C344C;
+    --sec-color: #52c3d6;
+    --primary-color:rgba(82, 195, 214, 0.4);
+    --about-color:rgba(235, 47, 74, 1);
+    --pragraph-color:rgba(41, 45, 50, 1);
+    --muted-color:#CDCDCD;
+}
+.cursor-pointer{
+    cursor: pointer;
+}
+.talk{
+    width: 8.75rem;
+    height: 3.125rem;
+    border-radius: 10px;
+    background: linear-gradient(260.87deg, #941225 -4.57%, #EB2F4A 99.03%);
+
+}
+
+.talk p{
+   font-size: 14px;
+   font-family: "Space Grotesk", sans-serif;
+   line-height: 1.1162rem;
+   font-weight: 700;
+
+}
+.talk .icon{
+    width: 20px;
+    height: 20px;
+    color: white;
+}   
+ 
+
+/* Styling */
+
+header{
+    background-image: url(/images/blur.png);
+    background-size: cover;
+    background-position: center center;
+}
+
+header h1{
+    font-family: "Space Grotesk", sans-serif;
+    background-image: linear-gradient(180deg, #DEDEDE 0%, rgba(255, 255, 255, 0) 100%);
+    font-size: 12.5rem;
+    text-align: center;
+    line-height: 15.95rem;
+    top: -114px;
+    left: -30px;
+    color: rgba(255, 255, 255, 0.6);
+    
+}
+header .head {
+    position: relative;
+    z-index: 3;
+}
+header .head  img{
+    width: 13.9375rem;
+    height: 4.5625rem;
+}
+header .head  p{
+    color: var(--main-color);
+    font-family: "Tajawal", sans-serif;
+    font-size: 14px;
+    
+    line-height: 16.8px;
+}
+header .head  .rect{
+    width: 3.75rem;
+    height: 1.875rem;
+    border-radius: 1.25rem;
+    background-color: var(--main-color);
+    box-shadow: 9px 7px 13px 0px #0000001C;
+
+}
+
+header .head  .rect i{
+    color: white;
+    width: 1.25rem;
+    height: 20px;
+
+}
+ 
+header .home .img1{
+    margin-top: 135px;
+}
+header .home .home-title{
+    font-size: 3rem;
+    font-family: "Space Grotesk", sans-serif;
+    line-height: 61.25px;
+    letter-spacing: 0.105em;   
+}
+header .home .home-title .title-1{
+    color: var(--sec-color);
+}
+header .home .home-title .title-1::after{
+    content: '';
+    position: absolute;
+    top: .6875rem;
+    right: 17%;
+    width: .1563rem;
+    height: 2.5rem;
+    background-color: var(--sec-color);
+
+}
+header .home .home-title .title-2{
+    
+    line-height: 82.94px;
+    font-size: 4.0625rem;
+}
+header .home .home-desc{
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 1rem;
+    line-height: 1.3231rem;
+
+}
+
+
+header .home .play{
+    width: 50px;
+    height: 50px;
+   background-color: var(--sec-color);
+
+}
+
+header .foot {
+    background-color: var(--main-color);
+    transform: rotate(6deg);
+
+}
+
+header .foot p{
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.9138rem;
+    font-weight: 400;
+}
+
+.number {
+    margin-top: 150px;
+}
+.number .number1 span{
+    color: var(--sec-color);
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+  
+}
+.number .number1 h3{
+    font-family: "Red Hat Display", sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    color: var(--main-color);
+}
+
+.number .number2 h3{
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 700;
+    font-size: 1.6875rem;
+    line-height: 2.1531rem;
+}
+.number .number2 .business{
+    background-color: var(--main-color);
+    background-image: url(/images/Layer\ 2\ 1.png);
+    background-repeat: no-repeat;
+    background-position: 130% 170%;
+
+   
+}
+.number .number2 .cookie,
+.number .number2 .breifcase,
+.number .number2 .bolt{
+    width: 85px;
+    height: 85px;
+}
+.number .number2 .cookie{
+    background-color: #FFBD4E40;
+}
+.number .number2 .cookie i{
+    color: #FFBD4E;
+
+}
+.number .number2 .breifcase{
+    background-color: #EB2F4A40;
+
+}
+.number .number2 .breifcase i{
+    color:#EB2F4A ;
+}
+.number .number2 .business .breifDesc{
+    color: rgba(255, 255, 255, 0.7);
+}
+.number .number2 .bolt{
+    background-color: var(--primary-color);
+}
+.number .number2 .bolt i{
+    color: var(--sec-color);
+
+}
+.number .number2 p{
+    font-family: "Red Hat Display", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: rgba(28, 52, 76, 1);
+}
+
+.about {
+    background-image: url(/images/Rectangle\ 51.png);
+    background-size: cover;
+}
+.about .row h6{ 
+    font-weight: 700;
+}
+.about .row h4{
+    font-family:"Space Grotesk", sans-serif;
+    font-weight: 700;
+    font-size: 3.125rem;
+    line-height: 3.2044rem;
+    color: var(--pragraph-color);
+}
+.about .row .aboutDesc{
+    font-family: "Red Hat Display", sans-serif;
+    font-weight: 400;
+    font-size: 1.375rem;
+    line-height:  1.8194rem;
+    
+}
+
+.about .checkIcon{
+    width: 20px;
+    height: 20px;
+    border-color: var(--about-color);
+
+}
+.about .checkIcon i{
+
+    color:var(--about-color);
+}
+.about .aboutCheck span{
+    font-family:"Space Grotesk", sans-serif;
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 1.595rem;
+    color: rgba(0, 0, 0, 1);
+}
+
+.delivering h6{
+    color: var(--sec-color);
+}
+.delivering h4,
+.fields h3,
+.delivering h6{
+    font-family:"Space Grotesk", sans-serif;
+    font-weight: 700;
+    font-size: 2.3125rem;
+    line-height:  2.3712rem;
+}
+.delivering h4,
+.fields h3{
+    color: var(--pragraph-color);
+}
+
+.slider .slide{
+    width: 180px;
+    height: 110px;
+    box-shadow: 7px 6px 17px 4px rgba(0, 0, 0, 0.06);
+
+}
+
+.fields{
+    background-image: url(/images/Group\ 3601.png);
+}
+.fields h6,
+.portfolio h6,
+.about .row h6{
+    font-family:"Space Grotesk", sans-serif;
+    font-size: 1.375rem;
+    line-height:   1.7544rem;
+    color: var(--sec-color);
+}
+.fields .fieldsDetails{
+    border-bottom: 2px solid rgb(167, 167, 167);
+}
+.fields .fieldsDetails p{
+    font-family:"Space Grotesk", sans-serif;
+    font-weight: 700;
+    font-size: 1.375rem;
+    line-height:  22.56px;
+    color: rgba(143, 143, 143, 1);
+  
+    
+}
+.fields .fieldsDetails p:hover{
+    color: var(--sec-color);
+}
+
+.fields .fieldsDetails p::after{
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    right: 10%;
+    width: 200px;
+    height: 2px;  
+    background-color: var(--main-color);
+}
+
+.fields .fieldIcon{
+    width: 77px;
+    height: 77px;
+    background-color: var(--primary-color);
+}
+.fields .fieldIcon i{
+    /* width: 40px; */
+    color: var(--sec-color);
+}
+.fields .talented h5{
+    font-family:"Space Grotesk", sans-serif;
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 20.51px;
+}
+.fields .talented p{
+    font-family: "Red Hat Display", sans-serif;
+    font-weight: 400;
+    font-size: .875rem;
+    line-height: 18.52px;
+}
+.fields .talented .talent1{
+    background-color: white;
+    transition: all 0.5s;
+    
+}
+.fields .talented .col-md-4{
+   transition: all 0.5s;
+}
+.fields .talented .col-md-4:hover .talent1{
+    background-color: var(--main-color);
+    color: white;
+
+}
+.port{
+    background-image: url(/images/Rectangle\ 51.png);
+    background-size: cover;
+}
+.portfolio .top p{
+    color: var(--muted-color);
+}
+.portfolio .top p,
+.portfolio .center p{
+    font-family:"Space Grotesk", sans-serif;
+    font-weight: 700;
+    font-size: 1.75rem;
+    line-height: 28.71px;
+   
+}
+.portfolio .top p span{
+    font-family:"Space Grotesk", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height:  20.42px;
+    color: var(--muted-color);
+}
+
+.portfolio .center p .sp1{
+    color: var(--muted-color);
+}
+.portfolio .center p .sp2 {
+    font-family:"Space Grotesk", sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 
+    20.42px ;
+    color: var(--sec-color);
+}
+.portfolio .center .arrow-icon{
+    width: 86.48px;
+    height: 86.48px;
+    background-color: var(--sec-color);
+}
+
+.portfolio .port .img2{
+    top: 1.6%;
+    right: 42.5%;
+}
+
+.partners h6{
+    font-family:"Space Grotesk", sans-serif;
+    font-weight: 700;
+    font-size: 1.375rem;
+    line-height: 
+    28.07px ;
+    color: var(--sec-color);
+}
+.partners .ourPartners .partner1 span,
+.partners .ourPartners .partner1 i{
+    color:  #1ED760;
+ 
+}
+
+.partners .ourPartners .partner2 .sp1{
+    color:  #4285F4;
+}
+.partners .ourPartners .partner2 .sp2{
+    color: #EA4335;
+}
+.partners .ourPartners .partner2 .sp3{
+    color:  #FBBC05;
+}
+.partners .ourPartners .partner2 .sp4{
+    color:  #34A853;
+}
+.partners .ourPartners .partner4 span{
+    color: #706D6E;
+}
+.partners .ourPartners .partner5 span{
+    color: #FA0C00;
+}
+
+.hosting{
+    background: radial-gradient(50% 50% at 50% 50%, #345D86 0%, #1C344C 100%);
+
+}
+
+.hosting h5{
+    font-family:"Space Grotesk", sans-serif;
+    font-weight: 700;
+    font-size: 1.375rem;
+    line-height: 
+    28.07px ;
+    color: var(--sec-color);
+}
+
+.hosting h4{
+    font-family: "Red Hat Display", sans-serif;
+    font-weight: 700;
+    font-size: 2.3125rem;
+    line-height: 37.94px;
+}
+
+.testimonial h6{
+    font-family:"Space Grotesk", sans-serif;
+    font-weight: 700;
+    font-size: 1.375rem;
+    line-height: 
+    28.07px ;
+    color: var(--sec-color);
+}
+.testimonial h5,
+.ourTeam p,
+.world p{
+    font-family:"Space Grotesk", sans-serif;
+    font-weight: 700;
+    font-size: 37px;
+    line-height: 37.94px;
+    color: var(--main-color);
+}
+
+.testimonial .webDev{
+    background: radial-gradient(50% 50% at 50% 50%, #345D86 0%, #1C344C 100%);
+  
+}
+.testimonial .webDev p,
+.ourTeam h6,
+.world h6{
+    font-family:"Space Grotesk", sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28.07px;
+}
+.testimonial .webDev span{
+    font-family: "Red Hat Display", sans-serif;
+    font-weight: 700;
+    font-size: 10.68px;
+    line-height:  14.13px;
+    color: var(--muted-color);
+}
+.testimonial .webDev img{
+    left: 0;
+    top: 70%;
+}
+
+.ourTeam h2{
+    font-family: "Space Grotesk", sans-serif;
+    background: linear-gradient(180deg, rgba(28, 52, 76, 0.1) 0%, rgba(255, 255, 255, 0) 100%);
+    font-size: 12.5rem;
+    text-align: center;
+    line-height: 15.95rem;
+    top: 0;
+    left:  0;
+    right: 0;
+    color: rgba(255, 255, 255, 0.6);
+}
+.ourTeam h6,
+.world h6{
+    color: var(--sec-color);
+}
+.ourTeam .team{
+    position: relative;
+    z-index: 2;
+}
+.ourTeam .talentsTeam img{
+ margin-top: 50px;
+
+}
+.ourTeam .talentsTeam{
+    font-family:"Space Grotesk", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height:  17.86px;
+    color: var(--sec-color);
+}
+.world .bank1,
+.world .bank2{
+    width: 25px;
+    height: 25px;
+    background-color: #EB2F4A;
+   
+}
+.world .bank1{
+    
+}
+.world .bank1{
+    /* top:20px;
+    left: 70px; */
+}
+.subscrib .container{
+    background-image: url(/images/Rectangle\ 32.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.subscrib span{
+    font-family: "Red Hat Display", sans-serif;
+font-size: 28px;
+font-weight: 600;
+line-height: 37.04px;
+
+
+}
+
+button:not(:disabled) {
+    border: none;
+    background: linear-gradient(260.87deg, #941225 -4.57%, #EB2F4A 99.03%);
+    /* right: 270px; */
+}
+
+ul li{
+    font-family: Space Grotesk;
+font-size: 18px;
+font-weight: 500;
+line-height: 17.86px;
+
+    padding-right: 40px;
+}
+ul{
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+ul li:first-of-type{
+    color: var(--sec-color);
+
+}
+
+footer .cover{
+    width: 24px;
+    height: 24px;
+    background-color: var(--sec-color);
+}
+.footer .rights {
+    font-family: Space Grotesk;
+font-size: 13px;
+font-weight: 700;
+line-height: 16.59px;
+color: var(--main-color);
+
+
+}
